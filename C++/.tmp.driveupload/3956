@@ -1,0 +1,66 @@
+// encapsulation
+
+/*
+
+#include <iostream>
+using namespace std;
+
+class employee
+{
+private:
+    int salary;
+
+public:
+    void setSalary(int s)
+    {
+        salary = s;
+    }
+    int getsalary()
+    {
+        return salary;
+    }
+};
+
+int main()
+{
+    employee empObj1;
+    empObj1.setSalary(5000);
+
+    cout << empObj1.setSalary << "\n";
+
+    return 0;
+} */
+
+#include <iostream>
+using namespace std;
+
+class Employee
+{
+private:
+    // Private attribute
+#include <iostream>
+    using namespace std;
+
+    class Employee
+    {
+    private:
+        int salary;
+
+    public:
+        void setSalary(int s)
+        {
+            salary = s;
+        }
+        int getSalary()
+        {
+            return salary;
+        }
+    };
+
+    int main()
+    {
+        Employee myObj;
+        myObj.setSalary(50000);
+        cout << myObj.getSalary();
+        return 0;
+    }
