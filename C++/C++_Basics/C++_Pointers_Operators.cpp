@@ -20,7 +20,6 @@ The following program executes the two operations
 
 #include <iostream>
 
-using namespace std;
 
 int main () {
    int  var;
@@ -34,9 +33,9 @@ int main () {
 
    // take the value available at ptr
    val = *ptr;
-   cout << "Value of var :" << var << endl;
-   cout << "Value of ptr :" << ptr << endl;
-   cout << "Value of val :" << val << endl;
+  std::cout << "Value of var :" << var << std::endl;
+  std::cout << "Value of ptr :" << ptr << std::endl;
+  std::cout << "Value of val :" << val << std::endl;
 
    return 0;
 }
@@ -49,17 +48,18 @@ Value of val :3000
 */
 
 #include <iostream>
-using namespace std;
 int main()
 {
 
     int Val = 3000;
     int *Ptr = &Val;
     int Var = *Ptr;
+    int &Var2 = *Ptr;
 
-    cout << " The value of Val: " << Val << endl;
-    cout << " The value of Ptr: " << Ptr << endl;
-    cout << " The value of Var: " << Var << endl;
+    std::cout << " The value of Val: " << Val << std::endl;
+    std::cout << " The value of Ptr: " << Ptr << std::endl;
+    std::cout << " The value of Var: " << Var << std::endl;
+    std::cout << "The value of Var2: " << Var2 << std::endl;
 
     return 0;
 }
